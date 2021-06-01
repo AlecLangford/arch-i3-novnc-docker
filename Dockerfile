@@ -1,6 +1,5 @@
 FROM archlinux:latest
 
-RUN pacman -Syyu --noconfirm
 RUN pacman -S --noconfirm \
     i3status \
     i3-wm \
