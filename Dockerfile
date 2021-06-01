@@ -15,7 +15,7 @@ FROM archlinux:latest
 #    xorg-server-xvfb \
 #    xorg-xinit \
 #    xonsh
-
+RUN pacman -Sy --noconfirm git
 # noVNC setup
 
 
