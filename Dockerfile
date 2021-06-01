@@ -15,14 +15,14 @@ FROM archlinux:latest
 #    xorg-server-xvfb \
 #    xorg-xinit \
 #    xonsh
-RUN pacman -Sy --noconfirm git
+#RUN pacman -Sy --noconfirm git
 # noVNC setup
 
 
-WORKDIR /usr/share/
-RUN git clone https://github.com/kanaka/noVNC.git
-WORKDIR /usr/share/noVNC/utils/
-RUN git clone https://github.com/kanaka/websockify
+#WORKDIR /usr/share/
+#RUN git clone https://github.com/kanaka/noVNC.git
+#WORKDIR /usr/share/noVNC/utils/
+#RUN git clone https://github.com/kanaka/websockify
 
 #RUN export DISPLAY=:0.0
 
