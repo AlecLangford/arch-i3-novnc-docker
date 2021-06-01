@@ -1,6 +1,6 @@
 FROM archlinux:latest
 
-RUN pacman -S --noconfirm \
+RUN pacman -Sy --noconfirm \
     i3status \
     i3-wm \
     git \
