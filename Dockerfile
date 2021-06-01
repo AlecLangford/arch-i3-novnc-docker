@@ -1,6 +1,5 @@
 FROM archlinux:latest
 
-RUN pacman -Sy --noconfirm archlinux-keyring
 RUN pacman -Syyu --noconfirm
 RUN pacman -S --noconfirm \
     i3status \
