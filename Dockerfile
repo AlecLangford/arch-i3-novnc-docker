@@ -1,7 +1,5 @@
 FROM base/archlinux:latest
 
-LABEL maintainer="fmacrae.dev@gmail.com"
-
 RUN pacman -Sy --noconfirm archlinux-keyring
 RUN pacman -Syyu --noconfirm
 RUN pacman -S --noconfirm \
@@ -10,16 +8,19 @@ RUN pacman -S --noconfirm \
     git \
     net-tools \
     python3 \
-    rxvt-unicode \
+    tilix \
     supervisor \
     ttf-dejavu \
     x11vnc \
     xorg-server \
     xorg-apps \
     xorg-server-xvfb \
-    xorg-xinit
+    xorg-xinit \
+    xonsh
 
 # noVNC setup
+
+
 WORKDIR /usr/share/
 RUN git clone https://github.com/kanaka/noVNC.git
 WORKDIR /usr/share/noVNC/utils/
